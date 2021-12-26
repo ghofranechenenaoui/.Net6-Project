@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SelfieAwwokieCore.Selfies.Domain;
 using SelfieAwwokieCore.Selfies.Infrastructure.Data.TypeConfiguration;
+using SelfieWookie.Core.Framework;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -13,7 +14,7 @@ namespace SelfieAwwokieCore.Selfies.Infrastructure.Data
     
 
    
-    public class SelfieContext :DbContext
+    public class SelfieContext :DbContext, IUnitOfWork
     {
 
         #region constructeur 

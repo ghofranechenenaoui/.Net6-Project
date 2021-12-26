@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SelfieWookie.Core.Framework\SelfieWookie.Core.Framework.csproj" />
-  </ItemGroup>
-
 </Project>

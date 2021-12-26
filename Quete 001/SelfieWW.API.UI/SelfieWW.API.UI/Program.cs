@@ -1,5 +1,8 @@
 using SelfieAwwokieCore.Selfies.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using SelfieAwwokieCore.Selfies.Domain;
+using SelfieAwwokieCore.Selfies.Infrastructure.Repositories;
+using SelfieWW.API.UI.Controllers.ExtentionMehods;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +18,15 @@ builder.Services.AddDbContext<SelfieContext>(options =>
     );
 
 });
+//builder.Services.AddTransient<ISelfieRepository, DefaultSelfieRepositories>();
+
+builder.Services.AddScoped<ISelfieRepository, DefaultSelfieRepositories>();
+builder.Services.AddInjection();
+
+//builder.Services.AddSingleton<DefaultSelfieRepositories>();
+
+
+
 
 var app = builder.Build();
 

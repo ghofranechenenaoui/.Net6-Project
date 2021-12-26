@@ -1,0 +1,7 @@
+﻿L'opération de génération a démarré...
+1>------ Début de la génération : Projet : SelfieWW.API.UI, Configuration : Debug Any CPU ------
+1>C:\Users\Ghofrane\Desktop\.NetUdemyProject\Quete 001\SelfieWW.API.UI\SelfieWW.API.UI\Controllers\SelfieController.cs(14,58,14,62): warning CS8625: Impossible de convertir un littéral ayant une valeur null en type référence non-nullable.
+1>C:\Users\Ghofrane\Desktop\.NetUdemyProject\Quete 001\SelfieWW.API.UI\SelfieWW.API.UI\Controllers\SelfieController.cs(55,88,55,99): warning CS8602: Déréférencement d'une éventuelle référence null.
+1>SelfieWW.API.UI -> C:\Users\Ghofrane\Desktop\.NetUdemyProject\Quete 001\SelfieWW.API.UI\SelfieWW.API.UI\bin\Debug\net6.0\SelfieWW.API.UI.dll
+1>Génération du projet "SelfieWW.API.UI.csproj" terminée.
+========== Génération : 1 a réussi, 0 a échoué, 2 à jour, 0 a été ignoré ==========
