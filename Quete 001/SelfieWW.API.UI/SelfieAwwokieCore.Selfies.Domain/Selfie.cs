@@ -16,10 +16,13 @@ namespace SelfieAwwokieCore.Selfies.Domain
         public int WookieId { get; set; }    
         public Wookie? Wookie { get; set; }
 
+<<<<<<< HEAD
         public int PictureId { get; set; }
         public Picture? Picture { get; set; }
 
 
+=======
+>>>>>>> 18e673c52cbd52ed9b9e7b8015efe1f234fbb2f9
         #endregion
 
 

@@ -34,7 +34,10 @@ namespace SelfieAwwokieCore.Selfies.Infrastructure.Data
 
         public DbSet<Selfie>? Selfies { get; set; }
         public DbSet<Wookie>? wookies { get; set; }
+<<<<<<< HEAD
         public DbSet<Picture>? pictures { get; set; }
 
+=======
+>>>>>>> 18e673c52cbd52ed9b9e7b8015efe1f234fbb2f9
     }
 }

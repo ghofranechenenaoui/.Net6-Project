@@ -10,20 +10,32 @@ namespace SelfieWW.API.UI.Controllers
     [Route("api/v1/[controller]")]
     [ApiController]
     public class SelfieController : ControllerBase
+<<<<<<< HEAD
     {
         #region Fields 
         private readonly ISelfieRepository _repository = null;
         private readonly IWebHostEnvironment _webHostEnvironment = null;
 
+=======
+        {
+        #region Fields 
+        private readonly ISelfieRepository _repository = null; 
+>>>>>>> 18e673c52cbd52ed9b9e7b8015efe1f234fbb2f9
         #endregion
 
         #region Constructeur
 
+<<<<<<< HEAD
         public SelfieController(ISelfieRepository repository, IWebHostEnvironment webHostEnvironment)
         {
 
             this._repository = repository;
             this._webHostEnvironment = webHostEnvironment;
+=======
+        public SelfieController (ISelfieRepository repository)
+        {
+             this._repository = repository;
+>>>>>>> 18e673c52cbd52ed9b9e7b8015efe1f234fbb2f9
 
         }
         #endregion
@@ -39,6 +51,7 @@ namespace SelfieWW.API.UI.Controllers
         //    #endregion
 
         #region public methods
+<<<<<<< HEAD
         [HttpGet("GetAll")]
 
         //The ActionResult types represent various HTTP status codes.
@@ -132,4 +145,34 @@ namespace SelfieWW.API.UI.Controllers
         #endregion
 
     }
+=======
+        [HttpGet]
+
+        //The ActionResult types represent various HTTP status codes.
+        public IActionResult TestAMoi()
+    {
+            // var model=  Enumerable.Range(1, 10).Select(item => new Selfie() { Id = item });
+
+            // return this.StatusCode(StatusCodes.Status204NoContent);
+
+            //var model = this._context.Selfies.ToList();
+            // var query = from Wookie in this._context.Selfies select Wookie;
+           // with this we can not show the wookie so another solution
+           // var model = this._context.Selfies.Include(item => item.Wookie).Select(item => new {Title = item.Title , WookieId = item.Wookie.Id , NbSelfieFromOneWookie = item.Wookie.Selfies.Count() }).ToList();
+           // include les information sur les wookies 
+
+
+            var selfieList = this._repository.GetAll();
+
+            var model = selfieList.Select(item => new SelfieResumeDto() { Title = item.Title, WookieId = item.Wookie.Id, NbrSelfiesFromWooki = (item.Wookie?.Selfies?.Count()).GetValueOrDefault(0)}).ToList();
+
+
+
+
+            return this.Ok(model);
+    }
+
+    #endregion
+}
+>>>>>>> 18e673c52cbd52ed9b9e7b8015efe1f234fbb2f9
 }

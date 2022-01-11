@@ -31,6 +31,7 @@ namespace SelfieAwwokieCore.Selfies.Infrastructure.Repositories
         #region public methods
         public ICollection<Selfie> GetAll()
         {
+<<<<<<< HEAD
             return this._context.Selfies.Include(item => item.Wookie).Include(item2 => item2.Picture).ToList();
         }
 
@@ -61,6 +62,9 @@ namespace SelfieAwwokieCore.Selfies.Infrastructure.Repositories
                 url = url
             }).Entity;
 
+=======
+            return this._context.Selfies.Include(item =>item.Wookie).ToList() ;
+>>>>>>> 18e673c52cbd52ed9b9e7b8015efe1f234fbb2f9
         }
         #endregion
         #region properties 

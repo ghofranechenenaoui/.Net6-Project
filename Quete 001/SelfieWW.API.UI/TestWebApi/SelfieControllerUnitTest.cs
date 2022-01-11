@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using SelfieAwwokieCore.Selfies.Domain;
+<<<<<<< HEAD
 using SelfieWookie.Core.Framework;
+=======
+>>>>>>> 18e673c52cbd52ed9b9e7b8015efe1f234fbb2f9
 using SelfieWW.API.UI.Application.DTOs;
 using SelfieWW.API.UI.Controllers;
 using System.Collections.Generic;
@@ -14,6 +17,7 @@ namespace TestWebApi
         #region public methods
 
         [Fact]
+<<<<<<< HEAD
         #region Insert method
         public void ShouldAddOneSelfie()
         {
@@ -40,6 +44,8 @@ namespace TestWebApi
 
 
         [Fact]
+=======
+>>>>>>> 18e673c52cbd52ed9b9e7b8015efe1f234fbb2f9
         public void ShouldReturnListOfSelfie()
         {
             //ARRANGE
